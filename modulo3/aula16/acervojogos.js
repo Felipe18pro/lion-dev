@@ -21,7 +21,7 @@ function exibirMenu(){
     5. Sair
     `)
      
-    rl.question('Escolha a opção: ', (numero) => { // configura as opções
+    rl.question('Escolha a opção: ', (numero) => { // configura as opções com funções
         switch (numero) {
             case '1':
                 cadastrarJogos()
@@ -99,7 +99,7 @@ function editarJogos(){ // verifica o numero digitado pelo usuario e edita cada 
                     })
                 })
             })
-        }else{
+        }else{ // caso digite algum caracter inválido
             console.log('Erro, numero inválido tente novamente')
             exibirMenu()
         }
